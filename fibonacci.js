@@ -12,4 +12,4 @@ function fibonacciGenerator (n) {
     return myArr;
 }
 
-console.log(fibonacciGenerator(3));
+console.log(fibonacciGenerator(25));

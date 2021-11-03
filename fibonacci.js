@@ -8,8 +8,10 @@ function fibonacciGenerator (n) {
         myArr.push(n1);
         n0 = n0 + n1;
         n1 = n0 + n1;
-    }
-    return myArr;
+    } // This method is creating an array double the length so we need to halve it with....
+    var half_length = Math.ceil(myArr.length / 2);   
+    var leftSide = myArr.splice(0,half_length);
+    return leftSide;
 }
 
-console.log(fibonacciGenerator(25));
+console.log(fibonacciGenerator(4));
